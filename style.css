@@ -1,0 +1,34 @@
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .sb-slider li {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      display: none;
+    }
+    .sb-slider img,
+    .sb-slider video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .sb-slider {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .full-page-button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      z-index: 9999;
+    }
