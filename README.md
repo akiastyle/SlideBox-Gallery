@@ -39,7 +39,7 @@ const slicebox = new SliceboxApp({
     showProgress: true,
     showIndicators: true,
     swipeThreshold: 50,
-    checkPath: 'check.php',
+    checkPath: 'check.???',
     mediaPath: 'gallery/',
     gal_onclick: 'https://example.com/overlay-content'
   }
@@ -59,7 +59,7 @@ slicebox.init();
 | `showProgress`   | `boolean` | `true`        | Show progress bar |
 | `showIndicators` | `boolean` | `true`        | Show navigation dots |
 | `swipeThreshold` | `number`  | `50`          | Min px swipe distance |
-| `checkPath`      | `string`  | `'check???'`  | URL to verify validity of `t` param |
+| `checkPath`      | `string`  | `'check,???'` | URL to verify validity of `t` param |
 | `mediaPath`      | `string`  | `'gallery/'`  | Base path for images/videos |
 | `gal_onclick`    | `string`  | `null`        | URL to load into fullscreen iframe |
 
@@ -74,8 +74,8 @@ project/
 │   ├── slide1.jpg
 │   ├── slide2.webp
 │   └── video.mp4
-├── check???
-├── check_update???
+├── check.???
+├── check_update.???
 └── icons/
     └── offline.svg
 ```
@@ -84,7 +84,7 @@ project/
 
 ## 🧪 Notes
 - If network is offline, iframe click is disabled
-- When changes are detected (via `check_update.php`), the page reloads automatically
+- When changes are detected (via `check_update.???`), the page reloads automatically
 - Preview images for videos are generated via canvas (no server-side thumbs required)
 
 ---
