@@ -59,7 +59,7 @@ slicebox.init();
 | `showProgress`   | `boolean` | `true`        | Show progress bar |
 | `showIndicators` | `boolean` | `true`        | Show navigation dots |
 | `swipeThreshold` | `number`  | `50`          | Min px swipe distance |
-| `checkPath`      | `string`  | `'check.php'` | URL to verify validity of `t` param |
+| `checkPath`      | `string`  | `'check???'`  | URL to verify validity of `t` param |
 | `mediaPath`      | `string`  | `'gallery/'`  | Base path for images/videos |
 | `gal_onclick`    | `string`  | `null`        | URL to load into fullscreen iframe |
 
