@@ -74,8 +74,8 @@ project/
 │   ├── slide1.jpg
 │   ├── slide2.webp
 │   └── video.mp4
-├── check.php
-├── check_update.php
+├── check???
+├── check_update???
 └── icons/
     └── offline.svg
 ```
