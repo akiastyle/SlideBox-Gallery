@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slicebox Demo</title>
+</head>
+<body>
+
+  <ul id="sb-slider" class="sb-slider"></ul>
+
+  <script type="module">
+    import { SliceboxApp } from './SliceboxApp.js';
+
+    const slides = [
+      { type: 'image', src: 'slide1.jpg', duration: 5000 },
+      { type: 'video', src: 'video.mp4', ext: 'mp4', duration: 10000 },
+      { type: 'image', src: 'slide2.webp', duration: 7000 }
+    ];
+
+    const slicebox = new SliceboxApp({
+      elementId: 'sb-slider',
+      slides,
+      options: {
+        autoplay: true,
+        showNav: true,
+        showProgress: true,
+        showIndicators: true,
+        swipeThreshold: 50,
+        checkPath: 'check.php',
+        mediaPath: 'gallery/',
+        gal_onclick: 'https://example.com'
+      }
+    });
+
+    slicebox.init();
+  </script>
+</body>
+</html>
