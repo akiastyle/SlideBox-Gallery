@@ -1,0 +1,15 @@
+{
+  "name": "slicebox-app",
+  "version": "1.0.0",
+  "description": "Fullscreen 3D image/video slider in ES6",
+  "type": "module",
+  "main": "./dist/SliceboxApp.js",
+  "exports": {
+    ".": {
+      "import": "./dist/SliceboxApp.js"
+    }
+  },
+  "keywords": ["slider", "3d", "fullscreen", "image", "video", "slicebox"],
+  "author": "YourName",
+  "license": "MIT"
+}
