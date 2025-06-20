@@ -87,7 +87,7 @@ export class SliceboxApp {
     this.items.forEach((item, i) => {
       item.style.display = i === index ? 'block' : 'none';
     });
-    this.updateIndicators ? .();
+    this.updateIndicators?.();
   }
 
   next() {
