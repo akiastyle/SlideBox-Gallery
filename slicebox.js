@@ -175,7 +175,6 @@ export class SliceboxApp {
       this.stop();
       this.current = (this.current - 1 + this.items.length) % this.items.length;
       this.showSlide(this.current);
-      this.updateIndicators();
       if (this.options.autoplay) this.start();
     });
 
@@ -245,7 +244,6 @@ export class SliceboxApp {
         this.stop();
         this.current = i;
         this.showSlide(this.current);
-        this.updateIndicators();
         if (this.options.autoplay) this.start();
       });
       wrapper.appendChild(dot);
@@ -283,7 +281,6 @@ export class SliceboxApp {
           this.current = (this.current + 1) % this.items.length;
         }
         this.showSlide(this.current);
-        this.updateIndicators();
         if (this.options.autoplay) this.start();
       }
     });
